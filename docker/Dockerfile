@@ -10,7 +10,7 @@ RUN apt-get -q update && \
 	rm -rf rm -rf /var/lib/apt/lists/*
 
 RUN apt-get -q update && \
-	apt-get install -y xvfb && \
+	apt-get install -y xvfb wget ffmpeg && \
 	conda config --set channel_priority false && \
 	conda update --all && \
 	apt-get install -y python3-pip && \

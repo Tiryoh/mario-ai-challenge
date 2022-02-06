@@ -14,6 +14,7 @@ RUN apt-get -q update && \
 	conda config --set channel_priority false && \
 	conda update --all && \
 	apt-get install -y python3-pip && \
+	pip install -qq gdown && \
 	pip install -qq imageio && \
 	pip install -qq jupyterlab && \
 	pip install -qq gym-super-mario-bros==7.3.0 && \
